@@ -37,3 +37,4 @@ open a wretched window!
 As per https://uk.mathworks.com/matlabcentral/answers/1636600-install-matlab-on-linux-without-gui it appears others are saying one
 still needs a bloody GUI. `enableLNU=no` doesn't fix it.
 
+This page https://www.mathworks.com/help/install/ug/install-noninteractively-silent-installation.html doesn't load anymore BTW.
