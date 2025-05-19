@@ -11,8 +11,8 @@
 source install.sh -inputFile installer_input_local.txt
 ```
   - needs:
-    - a valid File Installation Key (FIK) via option `fileInstallationKey=xxxxx-xxxxx-...
-    - a valid license file via option ``
+    - a valid File Installation Key (FIK) via option `fileInstallationKey=xxxxx-xxxxx-...`
+    - a valid license file via option `licensePath=/apps/jasmin/community/matlab/matlab_R2024b/matlab_license.lic`
   - logs in `/apps/jasmin/community/matlab/MATLAB/log`
 
 Make sure to set `$TMPDIR` to point to a writable dir eg:
