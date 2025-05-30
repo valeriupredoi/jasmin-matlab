@@ -2,6 +2,9 @@
 
 ### Working Version
 
+**UPDATE 30 May 2025**
+
+James has managed to install it, using a mounted ISO!
 Very many thanks to James Hannah!
 
 - location: `/apps/jasmin/community/matlab/app/bin`
@@ -50,12 +53,15 @@ Statistics and Machine Learning Toolbox               Version 24.2        (R2024
   - install with flags, using `installer_input_local.txt` configuration file
   - install command:
 ```
-source install.sh -inputFile installer_input_local.txt
+/mnt/.matlab/install -inputFile matlab-v.txt
 ```
   - needs:
     - a valid File Installation Key (FIK) via option `fileInstallationKey=xxxxx-xxxxx-...`
     - a valid license file via option `licensePath=/apps/jasmin/community/matlab/matlab_R2024b/matlab_license.lic`
   - logs in `/apps/jasmin/community/matlab/MATLAB/log`
+
+
+### Obsolete
 
 Make sure to set `$TMPDIR` to point to a writable dir eg:
 
@@ -81,7 +87,3 @@ still needs a bloody GUI. `enableLNU=no` doesn't fix it.
 
 This page https://www.mathworks.com/help/install/ug/install-noninteractively-silent-installation.html doesn't says exactly what I am trying to do,
 bar the target install is an unpacked ISO (which should be eqivalent to what we have on JASMIN).
-
-**UPDATE 30 May 2025**
-
-James has managed to install it, using a mounted ISO!
