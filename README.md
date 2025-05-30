@@ -19,9 +19,7 @@ Very many thanks to James Hannah!
  
 To get started, type doc.
 For product information, visit www.mathworks.com.
- 
->> mpmlist                         
-No matching packages found.
+
 >> 2+2
 
 ans =
