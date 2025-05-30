@@ -1,6 +1,50 @@
 ## MATLAB installation on JASMIN
 
-### Install
+### Working Version
+
+Very many thanks to James Hannah!
+
+- location: `/apps/jasmin/community/matlab/app/bin`
+- start: `$ ./matlab -nodisplay`
+- packages installed:
+
+```
+[valeriu@sci-vm-01 bin]$ ./matlab -nodisplay
+
+                                                                     < M A T L A B (R) >
+                                                           Copyright 1984-2024 The MathWorks, Inc.
+                                                      R2024b Update 5 (24.2.0.2863752) 64-bit (glnxa64)
+                                                                      January 31, 2025
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> mpmlist                         
+No matching packages found.
+>> 2+2
+
+ans =
+
+     4
+
+>> ver
+---------------------------------------------------------------------------------------------------------------
+MATLAB Version: 24.2.0.2863752 (R2024b) Update 5
+MATLAB License Number: 1089045
+Operating System: Linux 5.14.0-503.38.1.el9_5.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Apr 16 16:38:39 UTC 2025 x86_64
+Java Version: Java 1.8.0_202-b08 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+---------------------------------------------------------------------------------------------------------------
+MATLAB                                                Version 24.2        (R2024b)
+Curve Fitting Toolbox                                 Version 24.2        (R2024b)
+Image Processing Toolbox                              Version 24.2        (R2024b)
+Mapping Toolbox                                       Version 24.2        (R2024b)
+Optimization Toolbox                                  Version 24.2        (R2024b)
+Statistics and Machine Learning Toolbox               Version 24.2        (R2024b)
+>>
+```
+
+### Install Procedure
 
 - source: `/apps/jasmin/community/matlab/matlab_R2024b`
 - install targget: `/apps/jasmin/community/matlab/MATLAB`
@@ -39,3 +83,7 @@ still needs a bloody GUI. `enableLNU=no` doesn't fix it.
 
 This page https://www.mathworks.com/help/install/ug/install-noninteractively-silent-installation.html doesn't says exactly what I am trying to do,
 bar the target install is an unpacked ISO (which should be eqivalent to what we have on JASMIN).
+
+**UPDATE 30 May 2025**
+
+James has managed to install it, using a mounted ISO!
