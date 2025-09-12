@@ -1,5 +1,10 @@
 ## MATLAB installation on JASMIN
 
+### Group Workspace on JASMIN
+
+- GWS ``rdg_climate_matlab``
+- Apply at <https://accounts.jasmin.ac.uk/services/additional_services/rdg_climate_matlab/>
+
 ### Working Version
 
 **UPDATE 30 May 2025**
@@ -45,10 +50,16 @@ Statistics and Machine Learning Toolbox               Version 24.2        (R2024
 >>
 ```
 
+### Renew license (with new lic file)
+
+- location: ``/apps/jasmin/community/matlab/matlab_R2024b``
+- ``chown`` new lic file to ``valeriu:rdg_climate_matlab``
+- also move new file to existng file in ``licenses/license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic`` (needs be the same name)
+
 ### Install Procedure
 
 - source: `/apps/jasmin/community/matlab/matlab_R2024b`
-- install targget: `/apps/jasmin/community/matlab/MATLAB`
+- install target: `/apps/jasmin/community/matlab/MATLAB`
 - install procedure:
   - install with flags, using `installer_input_local.txt` configuration file
   - install command:
