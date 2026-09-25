@@ -56,6 +56,49 @@ Statistics and Machine Learning Toolbox               Version 24.2        (R2024
 - ``chown`` new lic file to ``valeriu:rdg_climate_matlab``
 - also move new file to existng file in ``licenses/license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic`` (needs be the same name)
 
+### Renew license 25 September 2026
+
+Procedure:
+
+- open a DTS ticket (at the new service-now portal) and email King and tell him this is up for renewal
+- Ian at DTS will cut a new license, make sure you provide him with the expired license file to have the needed data
+- pop the new license onto JASMIN, chown it like this:
+```
+[valeriu@sci-vm-01 licenses]$ ls -la
+total 111
+drwxr-xr-x  2 valeriu rdg_climate_matlab     0 Sep 25 09:36 .
+drwxr-xr-x 17 valeriu rdg_climate_matlab     0 May 30  2025 ..
+-rw-r--r--  1 valeriu users              39801 Sep 25 09:36 license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic
+-rw-r--r--  1 valeriu rdg_climate_matlab 36765 May 30  2025 license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic.OLD
+-rw-r--r--  1 valeriu rdg_climate_matlab 36432 Sep  9  2025 license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic.OLD2
+[valeriu@sci-vm-01 licenses]$ chown valeriu:rdg_climate_matlab license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic
+[valeriu@sci-vm-01 licenses]$ ls -la
+total 111
+drwxr-xr-x  2 valeriu rdg_climate_matlab     0 Sep 25 09:36 .
+drwxr-xr-x 17 valeriu rdg_climate_matlab     0 May 30  2025 ..
+-rw-r--r--  1 valeriu rdg_climate_matlab 39801 Sep 25 09:36 license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic
+-rw-r--r--  1 valeriu rdg_climate_matlab 36765 May 30  2025 license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic.OLD
+-rw-r--r--  1 valeriu rdg_climate_matlab 36432 Sep  9  2025 license_sci-vm-01.jasmin.ac.uk_1089045_R2024b.lic.OLD2
+[valeriu@sci-vm-01 licenses]$ cd /apps/jasmin/community/matlab/app/bin
+[valeriu@sci-vm-01 bin]$ ./matlab -nodisplay
+Enter passphrase for /home/users/valeriu/.ssh/id_rsa_jasmin: 
+Identity added: /home/users/valeriu/.ssh/id_rsa_jasmin (/home/users/valeriu/.ssh/id_rsa_jasmin)
+
+Enter passphrase for /home/users/valeriu/.ssh/id_rsa_jasmin: 
+Identity added: /home/users/valeriu/.ssh/id_rsa_jasmin (/home/users/valeriu/.ssh/id_rsa_jasmin)
+
+                                                        < M A T L A B (R) >
+                                              Copyright 1984-2024 The MathWorks, Inc.
+                                         R2024b Update 5 (24.2.0.2863752) 64-bit (glnxa64)
+                                                         January 31, 2025
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> 2+2
+```
+
 ### Install Procedure
 
 - source: `/apps/jasmin/community/matlab/matlab_R2024b`
